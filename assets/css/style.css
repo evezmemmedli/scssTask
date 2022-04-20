@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth; }
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center; }
+  header .my-nav {
+    width: 100%; }
+  header .my-navbar-row {
+    align-items: center; }
+  header a {
+    text-decoration: none;
+    color: royalblue;
+    font-size: 24px;
+    font-weight: bold; }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto; }
+  header ul li {
+    list-style: none;
+    position: relative; }
+  header .custom-menubar a {
+    margin-right: 15px;
+    color: #3856b0;
+    font-size: 16px;
+    font-weight: small; }
+  header .main-menu li {
+    padding: 10px 0; }
+  header .sub-menu {
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    left: 0;
+    background: white;
+    display: none;
+    list-style: none;
+    width: 200px;
+    text-align: left;
+    border: 1px solid rgba(221, 221, 221, 0.299);
+    border-bottom: 0; }
+  header .sub-menu li {
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: .3s all; }
+  header .main-menu > li:hover .sub-menu {
+    display: block; }
+  header .sub-menu li:hover {
+    background: #ddd; }
+
+@media screen and (max-width: 992px) {
+  .main-menu {
+    display: none; }
+  .custom-menubar .a1, .a2 {
+    display: none; } }
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url(https://www.nokia.com/sites/default/files/styles/scale_720_width/public/2022-04/nokia_pp_digital_21_720x540%20%281%29.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .first-section .section-include {
+    width: 800px;
+    max-width: 100%;
+    padding-right: 10px; }
+  .first-section h2 {
+    font-size: 72px;
+    color: white; }
+  .first-section .img-desc p {
+    font-size: 24px;
+    font-weight: lighter;
+    color: white; }
+  .first-section .img-button button {
+    background-color: royalblue;
+    padding: 0 45px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    outline: none;
+    border: none; }
+    .first-section .img-button button a {
+      text-decoration: none;
+      color: white; }
+
+.second-section {
+  padding: 50px; }
+  .second-section .container {
+    padding: 50px;
+    width: 100%;
+    height: 500px;
+    background-image: url(https://www.nokia.com/sites/default/files/styles/scale_1920_width/public/2022-04/6940_Real%20Action%20Header_AF_V1Real%20Action%20-%201120x560%20NO%20TEXT%20%281%29.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; }
+  .second-section h2 {
+    font-size: 62px;
+    font-weight: bold;
+    color: white; }
+  .second-section p {
+    font-size: 24px;
+    font-weight: lighter;
+    color: white; }
+  .second-section .button button {
+    padding: 0 45px;
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white; }
+    .second-section .button button a {
+      text-decoration: none; }
+
+.third {
+  width: 100%;
+  background-image: url(https://www.nokia.com/sites/default/files/styles/m100_mobile/public/2022-03/Moon_nokia_lead_op1.jpg?h=f3e1135c);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .third .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; }
+  .third .third-inner-block {
+    padding: 84px 96px;
+    background: #2965ED;
+    width: 700px;
+    margin-top: 120px; }
+  .third .third-inner-heading {
+    color: white;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.3; }
+  .third .third-inner-button a {
+    height: 50px;
+    background-color: white;
+    padding: 0 35px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    color: blue;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    margin-top: 30px;
+    align-items: center; }
+
+.fourth .container .card-title {
+  margin-bottom: 15px; }
+
+.fourth .container .card-desc {
+  margin-top: 15px; }
+
+.fourth .card-title h3 {
+  font-size: 24px;
+  font-weight: bold; }
+
+.fourth .card-title p {
+  font-size: 16px;
+  font-weight: lighter; }
+
+.fourth .my-row > div:hover h3 {
+  color: #2965ED;
+  text-decoration: underline; }
+
+.fourth .my-row > div:hover img {
+  transform: scale(1.1); }
+
+.fourth .my-row .card-image {
+  overflow: hidden; }
+  .fourth .my-row .card-image img {
+    transition: 500ms all;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+footer {
+  background-color: #001135;
+  color: white; }
+  footer .row {
+    justify-content: space-between;
+    align-items: center; }

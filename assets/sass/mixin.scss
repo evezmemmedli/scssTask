@@ -1,0 +1,19 @@
+
+@mixin text-decoration{
+    text-decoration: none;
+}
+@mixin list-style{
+    list-style: none;
+}
+@mixin dflex{
+    display: flex;
+}
+@mixin align-items{
+    align-items: center;
+}
+
+// font size
+@mixin titleFont($fontSize,$fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
